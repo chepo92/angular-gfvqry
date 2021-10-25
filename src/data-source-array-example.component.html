@@ -1,0 +1,16 @@
+<p>
+    You can also set array of objects as items input
+</p>
+
+<ng-select [items]="people"
+           bindLabel="name"           
+           [(ngModel)]="selectedPerson">
+</ng-select>
+
+<hr>
+
+{{selectedPerson | json}}
+
+<br>
+
+{{selectedPerson.id}}
